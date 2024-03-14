@@ -1,0 +1,78 @@
+/* ========================================================================== */
+/* Fonts */
+/* ========================================================================== */
+@font-face {
+    font-family: 'stolzl-b';
+    src: url('/fonts/Stolzl-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'stolzl-m';
+    src: url('/fonts/Stolzl-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'stolzl-r';
+    src: url('/fonts/Stolzl-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'stolzl-k';
+    src: url('/fonts/Stolzl-Book.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'commons-d';
+    src: url('/fonts/TT Commons DemiBold.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'commons-m';
+    src: url('/fonts/TT Commons Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'commons-r';
+    src: url('/fonts/TT Commons regular.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: 'commons-r';
+    color: $text-clr;
+    background-color: $main-bg;
+}
+
+.container{
+    max-width: 1260px;
+    width: 100%;
+    margin: auto;
+    @media (max-width: 1440px) {
+        max-width: 1140px;
+    }
+    @media (max-width: 1280px) {
+        max-width: 1080px;
+    }
+    @media (max-width: 1024px) {
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+    @media (max-width: 500px) {
+        max-width: 100%;
+        padding: 0px 10px;
+    }
+}

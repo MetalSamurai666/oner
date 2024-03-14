@@ -1,0 +1,110 @@
+.cats{
+    .box{
+        padding: 20px 0px 40px;
+    }
+    .list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-radius: 10px 10px 0px 10px;
+        overflow: hidden;
+        gap: 1px;
+        background-color: #E8E3E3;
+        box-shadow: 0px 4px 10px 0px rgba(46, 16, 101, 5%);
+    }
+    .item{
+        background-color: #fff;
+        transition: .3s ease;
+        &:hover{
+            box-shadow: 0px 5px 20px 0px rgba(42, 38, 49, 15%);
+            z-index: 5;
+            .item__title{
+                color: $purple;
+            }
+        }
+        &__box{
+            background-color: #fff;
+            padding: 25px 30px;
+            display: flex;
+            gap: 20px;
+            position: relative;
+        }
+        &__img{
+            position: relative;
+            img{
+                width: 48px;
+                z-index: 2;
+                position: relative;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                width: 40px;
+                height: 40px;
+                background: linear-gradient(90deg, rgba(72,50,212,1) 0%, rgba(89,70,215,0) 100%);
+                opacity: 0.1;
+                border-radius: 50%;
+                z-index: 1;
+            }
+        }
+        &__title{
+            font-family: 'commons-m';
+            font-size: 1.25em;
+            line-height: 150%;
+            transition: .3s ease;
+        }
+        &__info{
+            font-size: 14px;
+            line-height: 120%;
+        }
+        &__arrow{
+            position: absolute;
+            right: 20px;
+            bottom: 15px;
+            transition: .3s ease;
+        }
+        &_all{
+            .item__box{
+                background-image: url('/cats/category-bg.png');
+                background-size: 120%;
+                background-repeat: no-repeat;
+                background-position: center;
+                align-items: center;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    right: -28%;
+                    bottom: -130%;
+                    width: 200px;
+                    height: 200px;
+                    background-color: #fff;
+                    opacity: 0.2;
+                    border-radius: 50%;
+                    transition: .3s ease;
+                }
+            }
+            .item__title{
+                color: #fff;
+                height: fit-content;
+            }
+            &:hover{
+                .item__title{
+                    color: #fff;
+                }
+                .item__arrow{
+                    transform: translateX(5px);
+                }
+                .item__box{
+                    &::after{
+                        width: 205px;
+                        height: 205px;
+                    }
+                }
+            }
+        }
+    }
+}

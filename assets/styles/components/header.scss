@@ -1,0 +1,40 @@
+.header{
+    border-bottom: 1px solid #E3E3E8;
+    background-color: #fff;
+    .box{
+        padding: 15px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .search{
+        position: relative;
+        &__input{
+            width: 440px;
+            border: 1px solid #DEDEE2;
+            border-radius: 6px;
+            padding: 12px 20px;
+            font-size: 1em;
+            background-color: #F4F5F6;
+            &::placeholder{
+                color: #55556D;
+            }
+        }
+        &__btn{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 20px;
+            margin: auto;
+        }
+    }
+    .option{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &_bold{
+            .option__title{
+                font-weight: 700;
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.prdct{
+    &__box{
+        background-color: #fff;
+        border: 1px solid #DEDEE2;
+        border-radius: 10px;
+        padding: 30px 20px 25px;
+        transition: .3s ease;
+        &:hover{
+            box-shadow: 0px 4px 20px 0px #00000012;
+            border-color: #fff;
+        }
+    }
+    &__img{
+        display: block;
+        margin: auto;
+        width: fit-content;
+    }
+    &__info{
+        margin: 15px 0px 10px;
+        @include df-aic-jcsb;
+        font-size: 0.9em;
+        line-height: 140%;
+    }
+    &__art{
+        color: #7A7680;
+        span{
+            color: #505255;
+            margin-left: 3px;
+        }
+    }
+    &__rating{
+        @include df-aic;
+        gap: 3px;
+    }
+    &__num{
+        span{
+            color: #5F6569;
+        }
+    }
+    &__title{
+        font-family: 'commons-m';
+        line-height: 140%;
+    }
+    &__extra{
+        @include df-aic;
+        margin-top: 15px;
+    }
+    &__price{
+        font-family: 'commons-m';
+        font-size: 1.25em;
+    }
+    &__discount{
+        margin-left: 10px;
+        color: #7A7680;
+        line-height: 140%;
+    }
+    &__cart{
+        margin-left: auto;
+        width: 40px;
+        height: 40px;
+        @include df-aic-jcc;
+        border-radius: 8px;
+        transition: .3s ease;
+        border: 2px solid $purple;
+        img{
+            width: 24px;
+            transition: .3s ease;
+        }
+        &:hover{
+            background-color: $purple;
+            img{
+                filter: brightness(10);
+            }
+        }
+        &:active{
+            border-color: $purple-darker;
+            background-color: $purple-darker;
+        }
+    }
+}

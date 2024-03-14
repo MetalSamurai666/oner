@@ -1,0 +1,88 @@
+@import '@splidejs/vue-splide/css';
+
+.wrapper{
+    padding: 40px 0px 20px;
+    .slider{
+        background-image: url(/wrapper/bg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 30px;
+        &__box{
+            padding: 110px 60px 60px;
+            position: relative;
+            height: 100%;
+            color: #fff;
+        }
+        &__title{
+            font-family: 'stolzl-b';
+            font-size: 2.5em;
+            line-height: 140%;
+            max-width: 60%;
+            span{
+                padding: 2px 10px;
+                background-color: #FB5C2A;
+                border-radius: 10px;
+            }
+        }
+        &__info{
+            font-family: 'stolzl-k';
+            font-size: 1.1em;
+            line-height: 140%;
+            margin-top: 30px;
+        }
+        &__img{
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            // width: 490px;
+        }
+        &__arrow{
+            background-color: #fff;
+            opacity: 1;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px 0px rgba(46, 16, 102, 25%);
+            background-image: url(/logos/arrow-gray-l.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: .3s ease;
+            &:hover{
+                opacity: 1;
+                box-shadow: 0px 4px 20px 0px rgba(46, 16, 102, 25%);
+                background-color: $gray-dark;
+            }
+            &:active{
+                background-color: $gray-darker;
+            }
+            svg{
+                display: none;
+            }
+            &--prev{
+                left: -1em;
+            }
+            &--next{
+                right: -1em;
+                background-image: url(/logos/arrow-gray-r.svg);
+            }
+        }
+        &__pagination{
+            bottom: 60px;
+            left: 60px;
+            right: unset;
+            padding: 0;
+        }
+        &__page{
+            opacity: .3;
+            width: 60px;
+            height: 4px;
+            border-radius: 30px;
+            &.is-active{
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
+}
