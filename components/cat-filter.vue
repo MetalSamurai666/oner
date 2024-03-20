@@ -18,7 +18,10 @@
                             </button>
                         </div>
 
-                        <div class="info">Например: <span>WAUBH54B11N111054</span></div>
+                        <div class="info">
+                            Например: 
+                            <span>WAUBH54B11N111054</span>
+                        </div>
                     </div>
                 </div>
             </div>
