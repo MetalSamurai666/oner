@@ -36,6 +36,15 @@
                                 page      : 'splide__pagination__page slider__page',
                                 pagination: 'splide__pagination slider__pagination'
                             },
+                            breakpoints: {
+                                900: {
+                                    arrows: false,
+                                    perPage: 2.5,
+                                    gap: 20,
+                                    fixedWidth: 300,
+                                    dragMinThreshold: 5,
+                                }
+                            }
                         }" 
                         class="slider splide"
                     >

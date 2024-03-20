@@ -6,6 +6,12 @@
     <header class="header">
         <div class="container">
             <div class="box">
+                <div class="menu">
+                    <button>
+                        <img src="/logos/menu-line.svg">
+                    </button>
+                </div>
+
                 <div class="logo">
                     <NuxtLink to="/">
                         <img src="/logo.svg">

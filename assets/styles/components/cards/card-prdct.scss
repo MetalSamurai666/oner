@@ -11,9 +11,15 @@
         }
     }
     &__img{
-        display: block;
+        display: flex;
         margin: auto;
         width: fit-content;
+        img{
+            width: 220px;
+            // height: 220px;
+            object-fit: cover;
+            object-position: center;
+        }
     }
     &__info{
         margin: 15px 0px 10px;
@@ -53,6 +59,8 @@
         margin-left: 10px;
         color: #7A7680;
         line-height: 140%;
+        text-decoration: line-through;
+        margin-bottom: 3px;
     }
     &__cart{
         margin-left: auto;
@@ -75,6 +83,30 @@
         &:active{
             border-color: $purple-darker;
             background-color: $purple-darker;
+        }
+    }
+
+    @media (max-width: 1280px) {
+        &__img{
+            img{
+                width: 180px;
+            }
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        &__box{
+            width: 300px;
+            padding: 30px 20px 20px;
+        }
+        &__img{
+            img{
+                width: 220px;
+            }
+        }
+        &__price{
+            font-size: 2em;
         }
     }
 }

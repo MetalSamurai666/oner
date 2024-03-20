@@ -16,6 +16,8 @@
                                 Перейти
                                 <img src="/logos/arrow-white-r.svg">
                             </NuxtLink>
+
+                            <img src="/bigs/oil.png" class="img">
                         </div>
                     </li>
                     <li class="item">
@@ -28,6 +30,8 @@
                                 Перейти
                                 <img src="/logos/arrow-white-r.svg">
                             </NuxtLink>
+
+                            <img src="/bigs/oil.png" class="img">
                         </div>
                     </li>
                     <li class="item">
@@ -40,6 +44,8 @@
                                 Перейти
                                 <img src="/logos/arrow-white-r.svg">
                             </NuxtLink>
+
+                            <img src="/bigs/oil.png" class="img">
                         </div>
                     </li>
                 </ul>

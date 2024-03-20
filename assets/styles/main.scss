@@ -55,6 +55,11 @@ body{
     font-family: 'commons-r';
     color: $text-clr;
     background-color: $main-bg;
+    @media (max-width: 1024px) {
+        *{
+            font-size: 14px;
+        }
+    }
 }
 
 .container{

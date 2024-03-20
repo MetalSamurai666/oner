@@ -142,14 +142,45 @@
                             </NuxtLink>
 
                             <div class="status">
-                                <img src="/logos/green.svg" class="status__img">
+                                
+                                <div class="status__logo"></div>
 
                                 <div class="status__title">
                                     Сервис работает в обычном режиме
                                 </div>
                             </div>
+
+                            <div class="conf">
+                                <NuxtLink to="/" class="text">Оферта</NuxtLink>
+                                <NuxtLink to="/" class="text">Конфиденциальность</NuxtLink>
+                            </div>
                         </li>
                     </ul>
+                </div>
+
+                <div class="foot">
+                    <div class="text">
+                        Copyright © ООО «Oner.ru» 2021. All rights reserved.
+                    </div>
+
+                    <div class="payment">
+                        <div class="text">Принимаем к оплате</div>
+
+                        <a href="#" class="btn">
+                            <img src="/logos/visa.svg" alt="Visa Logo">
+                        </a>
+                        <a href="#" class="btn">
+                            <img src="/logos/mastercard.svg" alt="MasterCard Logo">
+                        </a>
+                        <a href="#" class="btn">
+                            <img src="/logos/mir.svg" alt="MIR Logo">
+                        </a>
+                    </div>
+
+                    <div class="conf">
+                        <NuxtLink to="/" class="text">Оферта</NuxtLink>
+                        <NuxtLink to="/" class="text">Конфиденциальность</NuxtLink>
+                    </div>
                 </div>
             </div>
         </div>
@@ -157,5 +188,5 @@
 </template>
 
 <style lang="scss">
-@import '@/assets/styles/components/footer.scss';
+    @import '@/assets/styles/components/footer.scss';
 </style>

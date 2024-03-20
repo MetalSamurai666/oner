@@ -12,7 +12,6 @@
         ],
     })
 
-
     const recomemnd = ref({
         title: 'Рекомендуем',
         slider: true,
@@ -25,7 +24,6 @@
             {},
         ],
     })
-
 
     const often = ref({
         title: 'Часто продаваемые',

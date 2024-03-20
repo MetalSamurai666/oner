@@ -33,6 +33,17 @@
                             page      : 'splide__pagination__page slider__page',
                             pagination: 'splide__pagination slider__pagination'
                         },
+                        breakpoints: {
+                            1024: {
+                                fixedHeight: 350
+                            },
+                            768: {
+                                fixedHeight: 230
+                            },
+                            600: {
+                                fixedHeight: 200
+                            }
+                        }
                     }" 
                     class="slider splide"
                 >
@@ -42,6 +53,7 @@
                         :key="idx"
                     >
                         <div class="slider__box" >
+                            <!-- <div class="slider__ball"></div> -->
                             <div class="slider__title" v-html="item?.title"></div>
 
                             <div class="slider__info">{{ item?.info }}</div>
